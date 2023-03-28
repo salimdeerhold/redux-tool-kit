@@ -1,14 +1,12 @@
-import {StyleSheet} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import { Provider } from 'react-redux';
 import MainPage from './src/page/main_page';
-import { store } from './src/store/store';
+import store from './src/store/store';
 
 const App = () => {
-  return (
-    <Provider store={store}>
-      <MainPage/>
-    </Provider>
-  );
+  return <Provider store={store}>
+    <MainPage/>
+  </Provider>
 };
 
 const styles = StyleSheet.create({});
